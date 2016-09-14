@@ -1,5 +1,4 @@
 Puneeth S
-9741001934
 puneeth94@gmail.com
 
 
