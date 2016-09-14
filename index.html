@@ -1,0 +1,255 @@
+<!doctype html>
+
+<!--Resume builder project-->
+<html>
+
+<!--Using bootstrap stylesheet-->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <title>Resume</title>
+</head>
+
+<body id="cat">
+
+ <!--Navbar fixed top to keep the navigation bar static at the top-->
+    <nav class="navbar navbar-fixed-top" style="font-size: 1.5em; background-color: black; font-family: sans-serif; color: black; opacity: 0;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+   <!--For mobile view, keeping the navbar as a drop down menu which can be toggled on click-->            
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <i class="fa fa-bars" aria-hidden="true" style="color: #337aa9;"></i>
+      </button>
+                <a class="navbar-brand" href="#" style="font-size: 1.5em;">Resume Builder</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#build">Start building</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+       <!--This is page one which shows the main heading-->
+    <div class="page-one" id="home" style="background-color: #e9e581; background-size:cover; font-family: 'Times-New-Roman'; text-align:center; color: #000; height:650px; width: 100%; margin-top:-4%;">
+
+
+        <h1 class="text-center pageonetitle" style="padding-top:16%; font-size: 3.4em;"><b>Resume Builder,</b></h1>
+        <h3 class="text-center"><i>Create a professional resume in minutes...</i></h3>
+
+
+        <div class="text-center btn-group" id="buttons" style="margin-top: 2%; vertical-align: middle; margin-left:auto; margin-right:auto;">
+            <a class="btn btn-primary" href="#build" style=" background: white; border-color: black; color: #337aa9; width:200px;"><b>Get Started</b></a>
+        </div>
+
+    </div>
+
+
+    <!--This is the next page which is obtained after scrolling down. Tabs are used to make the form look simpler-->
+
+    <div class="pagethree" id="build" style="background-color: #fff; height:100%">
+        <div class="container">
+
+            <h1 class="text-center p3title" style="font-size: 4em; padding-top:2%;">Start Building</h1>
+
+     <!--This section represents the tabs that are made. A total of 7 tabs have been made, each serving it's own purpose-->
+            <div class="container">
+                <ul class="nav nav-tabs" style="font-size:1.4em; word-break:normal; margin-left:auto; margin-right:auto;">
+                    <li><a data-toggle="tab" href="#home1"><b>Home</b></a></li>
+                    <li><a data-toggle="tab" href="#menu1"><b>Personal details</b></a></li>
+                    <li><a data-toggle="tab" href="#menux"><b>Interests & skills</b></a></li>
+                    <li><a data-toggle="tab" href="#menu2"><b>Experience</b></a></li>
+                    <li><a data-toggle="tab" href="#menu3"><b>Education details</b></a></li>
+                    <li><a data-toggle="tab" href="#menu4"><b>Achievements</b></a></li>
+                    <li><a data-toggle="tab" href="#menu5"><b>Select theme</b></a></li>
+                </ul>
+
+     <!--This is the first tab which briefly speaks about what the application does and how to get started.-->
+                <div class="tab-content">
+                    <div id="home1" class="tab-pane fade in active" style="height:100%; padding-bottom:20%; border-radius:1.8%; padding-left: 1%; background-color:#DFE2DB;">
+                        <h2 class="text-center" style="font-size: 3.6em; word-break: normal; padding-top:1%">Let's begin</h2>
+                        <p style="font-size:2em;">Want to make a good first impression on your dream company with your resume?<br/> Need an online tool that will help you out in creating your resume quickly and professionally?<br/> Try the new Resume builder which will help you in building your resume without the hassle and struggle of figuring out how to format everything. With a good resume, you have a passport to a better job....</p>
+                        <br/>
+                        <p style="font-size:2em;">To start, Click on the personal details tab and begin the process.</p>
+
+      <!--This is the second tab that starts with the form. This field container personal details-->      
+                    </div>
+                    <div id="menu1" class="tab-pane fade" style="height:100%; border-radius:1.8%; padding-left: 0.5%; padding-right: 0.5%; background-color:#CBE3FF;">
+
+                        <form style="padding-bottom:2%;">
+                            <div class="text-center">
+                                <h2><b>Full Name</b></h2><br/>
+                                <input type="text" class="text-center" id="fullname" name="fullname" placeholder="Name" style="width:100%;"><br><br/>
+
+                                <h2><b>Phone Number</b></h2><br/>
+                                <input type="text" class="text-center" id="phone" name="phone" placeholder="Phone-number" style="width:100%;"><br/><br/>
+
+                                <h2><b>E-Mail</b></h2><br/>
+                                <input type="text" class="text-center" id="mail" name="mail" placeholder="E-mail" style="width:100%;"><br/><br/>
+
+
+                            </div>
+                        </form>
+                    </div>
+
+       <!--This part of the form contains interests and skills section-->
+                    <div id="menux" class="tab-pane fade" style="height:100%; border-radius:1.8%; padding-left: 0.5%; padding-right: 0.5%; background-color:#ffe0c0;">
+                        <form>
+                            <div>
+                                <h2 class="text-center"><b>Interested in</b></h2>
+                                <input type="text" class="text-center" name="interest1" placeholder="technology1" id="int1" style="width:100%;"><br/><br/>
+                                <input type="text" class="text-center" name="interest2" placeholder="technology2" id="int2" style="width:100%;"><br/><br/>
+                                <input type="text" class="text-center" name="interest3" placeholder="technology3" id="int3" style="width:100%;"><br/><br/>
+                                <input type="text" class="text-center" name="interest4" placeholder="technology4" id="int4" style="width:100%;"><br/><br/>
+                                <input type="text" class="text-center" name="interest5" placeholder="technology5" id="int5" style="width:100%;"><br/><br/>
+                                <input type="text" class="text-center" name="interest6" placeholder="technology6" id="int6" style="width:100%;"><br/><br/>
+
+
+
+                                <button type="button" id="intclick" class="text-center btn btn-primary" style="width:200px; vertical-align:middle; margin-left:auto; margin-right:auto; margin-top:-20%;">Add more</button>
+
+
+                                <h2 class="text-center"><b>Skills</b></h2>
+
+                                <input type="text" class="text-center" name="skill1" placeholder="skill1" id="skill1" style="width:100%;"></li><br/><br/>
+                                <input type="text" class="text-center" name="skill2" placeholder="skill2" id="skill2" style="width:100%;"></li><br/><br/>
+                                <input type="text" class="text-center" name="skill3" placeholder="skill3" id="skill3" style="width:100%;"></li><br/><br/>
+                                <input type="text" class="text-center" name="skill4" placeholder="skill4" id="skill4" style="width:100%;"></li><br/><br/>
+                                <input type="text" class="text-center" name="skill5" placeholder="skill5" id="skill5" style="width:100%;"></li><br/><br/>
+                                <input type="text" class="text-center" name="skill6" placeholder="skill6" id="skill6" style="width:100%;"></li><br/><br/>
+
+                                <button type="button" id="skillclick" class="text-center btn btn-primary" style="width:200px; vertical-align:middle; margin-left:auto; margin-right:auto; margin-top:-20%;">Add more</button>
+                        </form>
+                        </div>
+
+
+                        <h3>Note: Please fill a minimum of 3 skills and technological interests</h3>
+
+                    </div>
+
+       <!--This section takes inputs of experiences in various companies-->
+                    <div id="menu2" class="tab-pane fade" style="height:100%; border-radius:1.8%; padding-left: 0.5%; padding-right: 0.5%; background-color:#67bcdb;">
+
+                        <form>
+                            <div>
+                                 <div>
+                                <h3><b>Company 1</b></h3>
+                                    <h4 class="text-center">Company Name</h4><input type="text" class="text-center" name="exp1" id="exp1" style="width:100%;"><br/>
+                                    <h4 class="text-center">Year in which you served the company</h4><input type="text" class="text-center" name="exp2" id="exp2" style="width:100%;"><br/>
+                                    <h4 class="text-center">Job profile</h4><input type="text" class="text-center" name="exp3" id="exp3" style="width:100%;"></li><br/>
+                                    <h4 class="text-center">What you learnt</h4><input type="text" class="text-center" name="exp4" id="exp4" style="width:100%;"></li><br/><br/>
+                                    </div>
+
+                                <div id="expjs">
+                                    <h3><b>Company 2</b></h3>
+                                    <h4 class="text-center">Company Name</h4><input type="text" class="text-center" name="exp21" id="exp21" style="width:100%;"><br/>
+                                    <h4 class="text-center">Year in which you served the company</h4><input type="text" class="text-center" name="exp22" id="exp22" style="width:100%;"><br/>
+                                    <h4 class="text-center">Job profile</h4><input type="text" class="text-center" name="exp23" id="exp23" style="width:100%;"></li><br/>
+                                    <h4 class="text-center">What you learnt</h4><input type="text" class="text-center" name="exp24" id="exp24" style="width:100%;"></li><br/><br/>
+                                </div>
+
+
+                            </div>
+                            <button type="button" id="expclick" class="text-center btn btn-primary" style="width:200px; vertical-align:middle; margin-left:auto; margin-right:auto; margin-top:0px; margin-bottom:2%;">Add more</button>
+                        </form>
+                    </div>
+
+       <!--This section takes inputs for the educational details-->
+                    <div id="menu3" class="tab-pane fade" style="height:100%; border-radius:1.8%; padding-left: 0.5%; padding-right: 0.5%; background-color:#FF9069;">
+
+                        <h2><b>Education:</b></h2>
+                        <form>
+                            <div class="text-center">
+                                <h4 style="font-size:2em"><b>College 1</b></h4>
+                                <h4>University and college</h4><input type="text" class="text-center" name="edu1" id="edu1" style="width:100%;"></li><br/>
+                                <h4>Degree name and subject</h4><input type="text" class="text-center" name="edu2" id="edu2" style="width:100%;"></li><br/>
+                                <h4>location(city)</h4><input type="text" class="text-center" name="edu3" id="edu3" style="width:100%;"></li><br/><br/>
+                            </div>
+                            <div class="text-center" id="edujs">
+                                <h4 style="font-size:2em"><b>College 2</b></h4>
+                                <h4>University and college</h4><input type="text" class="text-center" name="edu21" id="edu21" style="width:100%;"></li><br/>
+                                <h4>Degree name and subject</h4><input type="text" class="text-center" name="edu22" id="edu22" style="width:100%;"></li><br/>
+                                <h4>location(city)</h4><input type="text" class="text-center" name="edu23" id="edu23" style="width:100%;"></li><br/><br/>
+                            </div>
+                            <button type="button" id="educlick" class="text-center btn btn-primary" style="width:200px; vertical-align:middle; margin-left:auto; margin-right:auto; margin-top:0px; margin-bottom:2%;">Add more</button>
+                        </form>
+                    </div>
+
+         <!--This section is used to take inputs of various achievements-->
+                    <div id="menu4" class="tab-pane fade" style="height:100%; border-radius:1.8%; padding-left: 0.5%; padding-right: 0.5%; background-color:#DFBDF2;">
+
+                        <form>
+                            <div>
+                                <h2><b>Achievements:</b></h2>
+                                <h4 class="text-center" style="font-size:2em;"><b>Achievement 1</b></h4>
+                                <h4 class="text-center">Title</h4><input type="text" class="text-center" name="ach11" id="ach11" style="width:100%;"></li><br/>
+                                <h4 class="text-center">Event</h4><input type="text" class="text-center" name="ach12" id="ach12" style="width:100%;"></li><br/>
+                                <h4 class="text-center">Details</h4><input type="text" class="text-center" name="ach13" id="ach13" style="width:100%;"></li><br/><br/>
+
+
+                                <div id="ach2js">
+                                    <h4 class="text-center" style="font-size:2em;"><b>Achievement 2</b></h4>
+
+                                    <h4 class="text-center">Title</h4><input type="text" class="text-center" name="ach21" id="ach21" style="width:100%;"></li><br/>
+                                    <h4 class="text-center">Event</h4><input type="text" class="text-center" name="ach22" id="ach22" style="width:100%;"></li><br/>
+                                    <h4 class="text-center">Details</h4><input type="text" class="text-center" name="ach23" id="ach23" style="width:100%;"></li><br/><br/>
+                                </div>
+
+                                <div id="ach3js">
+                                    <h4 class="text-center" style="font-size:2em;"><b>Achievement 3</b></h4>
+
+                                    <h4 class="text-center">Title</h4><input type="text" class="text-center" name="ach31" id="ach31" style="width:100%;"></li><br/>
+                                    <h4 class="text-center">Event</h4><input type="text" class="text-center" name="ach32" id="ach32" style="width:100%;"></li><br/>
+                                    <h4 class="text-center">Details</h4><input type="text" class="text-center" name="ach33" id="ach33" style="width:100%;"></li><br/><br/>
+                                </div>
+                            </div>
+                            <button type="button" id="achclick" class="text-center btn btn-primary" style="width:200px; vertical-align:middle; margin-left:auto; margin-right:auto; margin-top:0px; margin-bottom:2%;">Add more</button>
+                        </form>
+                    </div>
+        <!--This is the final tab in which the user can choose a theme of their choice-->
+                    <div id="menu5" class="tab-pane fade" style="height:100%; border-radius:1.8%; padding-left: 0.5%; padding-right: 0.5%; background-color:#a2ab58;">
+
+                        <div class="container">
+                            <div class="row">
+
+                                <h3><b>Select Theme:</b></h3>
+                                <ul style="list-style:none;">
+
+                                    <div class="col-md-6 col-sm-12 col-xs-12 text-center">
+                                        <li style="font-size:1.4em;"><b>Theme1</b><br/><br/><img style="margin-left:auto; margin-right:auto" class="image img-responsive" src="http://imgur.com/8MGq7TB.jpg"><br/><input type="submit" class="size" id="theme1" name="theme1" style="margin-top:10px; width:200px;"></li><br/>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-12 col-xs-12 text-center">
+                                        <li style="font-size:1.4em;"><b>Theme2</b><br/><br/><img style="margin-left:auto; margin-right:auto" class="image img-responsive" src="http://imgur.com/QeTmq1W.jpg"><br/><input type="submit" class="size" id="theme2" name="theme2" style="margin-top: 10px; width:200px;"></li><br/><br/>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+</body>
+
+<!--These are all the scripts that have been used-->
+<script src="https://use.fontawesome.com/c7082764ea.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
+<script type="text/javascript" src="index2.js"></script>
+<script type="text/javascript" src="index3.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</html>
